@@ -18,7 +18,11 @@
 }
 .sidebars
 {
-    background-image: url("images/subtract.png");
+    background-image: url("../images/subtract.png");
     background-repeat: no-repeat;
     background-size : cover;
+}
+.social-logo
+{
+    width: 100%;
 }
