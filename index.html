@@ -4,10 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    
 
     <title>Shakeel haider</title>
   </head>
@@ -97,7 +99,7 @@
 
                 <div class="row">
                   <div class="col-md-2">
-                    <p>ggg</p>
+                    <p>icon</p>
                   </div>
                   <div class="col-md-10">
                     <h1>Education</h1>
@@ -105,9 +107,90 @@
                 </div>
 
               </div>
+              <div class="col-md-12"><hr></div>
+              <div class="col-md-12 ml-5">
+
+                <p><b>BS SOFTWARE ENGINEERING</b><br>Indus University karachi <br>2015-2019</p>
+
+              </div>
+              <div class="col-md-12 ml-5">
+
+                <p><b>INTERMEDIATE</b><br>Pakistan Shipowner's Collage <br>2013-2015</p>
+
+              </div>
+              <div class="col-md-12 ml-5">
+
+                <p><b>METRIC</b><br>Al Nasir Secondary School <br>2005-2010</p>
+
+              </div>
 
             </div>
-            <hr>
+            
+
+            <div class="row mt-5">
+
+              <div class="col-md-12">
+
+                <div class="row">
+                  <div class="col-md-2">
+                    <p>icon</p>
+                  </div>
+                  <div class="col-md-10">
+                    <h1>Cerification</h1>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-12"><hr></div>
+              <div class="col-md-12 ml-5">
+
+                <p><b>Python For Applied Data Science</b><br>Coursera.org  </p>
+                <p></p>
+
+              </div>
+              <div class="col-md-12 ml-5">
+
+                <p><b>Tensorflow For Machine Learning</b><br>Coursera.org </p>
+
+              </div>
+              <div class="col-md-12 ml-5">
+
+                <p><b>AI For Everyone</b><br>Coursera.org </p>
+
+              </div>
+
+              <div class="col-md-12 ml-5">
+
+                <p><b>PRESIDENTIAL INITIATIVE FOR ARTIFICIAL INTELLIGENCE AND COMPUTING</b><br>SIR ADAMJEE INSTITUTE <br>2019-Present </p>
+
+              </div>
+
+            </div>
+
+            <div class="row mt-5">
+
+              <div class="col-md-12">
+
+                <div class="row">
+                  <div class="col-md-2">
+                    <p>icon</p>
+                  </div>
+                  <div class="col-md-10">
+                    <h1>SKILLS</h1>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-12"><hr></div>
+
+              <div class="col-md-12">
+                <div id="chart_div" class="border">
+
+                </div>
+              </div>
+              
+
+            </div>
 
 
           </div>
@@ -143,9 +226,44 @@
 
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Android Development', 3],
+          ['UI/UX', 1],
+          ['Machine Learning', 1],
+          ['React', 1],
+          ['Flask', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'', 'height' : 600, 'is3D' : false, 'legend' : 'left'};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
   </body>
 </html>
