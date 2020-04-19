@@ -13,7 +13,7 @@
 }
 #heading
 {
-    font-size: 60px;
+    font-size: 5rem;
     font-weight: bold;
 }
 #subline
@@ -30,17 +30,35 @@
 .social-logo
 {
     width: 50%;
+    margin: 0 auto;
 }
 .image-icon
 {
     width: 100%;
-    height: 100%;
+    
 }
 .sidebar-image-icon
 {
     width: 90%;
 }
+.sidebar-heading
+{
+    font-size: 100%;
+    font-weight: bold;
+}
 .cat-title
 {
-    font-size: 6em;
+    font-size: 3em;
+}
+.light300
+{
+    font-family: 'Roboto Mono', monospace;
+}
+.thin100
+{
+    font-family: 'Roboto Mono', monospace;
+}
+a
+{
+    color: black;
 }
