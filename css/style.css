@@ -1,3 +1,4 @@
+
 body
 {
     background-color: rgb(252, 252, 255);
@@ -6,7 +7,10 @@ body
 {
     background-color: rgb(255, 255, 255);
 }
-
+#frow
+{
+    background-color: white;
+}
 .col
 {
     border: 1px;
@@ -35,6 +39,10 @@ body
 {
     width: 50%;
     margin: 0 auto;
+    transition: transform .2s;
+}
+.social-logo:hover{
+    transform: scale(1.1);
 }
 .image-icon
 {
